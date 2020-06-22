@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Una web app para poder calcular el sueldo, de un cajero de dinosaurio mall" desciription="Se puede calcular el sueldo del mes deseado, con los campos necesarios para calcular bien el mismo">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    
+
+   
+
+</head>
+
+<body>
+    <div class="container-general">
+        <div class="cuadroReciboSueldo" >
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    
+                    <th scope="col">Recibo de Sueldo</th>
+                    <th scope="col">Sueldo Basico: <%=sueldoConAntiguedad %></th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="row-nodescuentos">
+                    
+                    <td>Horas Normales</td>
+                    <td class="centrar"><%=sueldoBasico.toFixed(2)%></td>
+                    
+                  </tr>
+
+                  <tr class="row-nodescuentos">
+                    
+                    <td>Hs adicionales Part</td>
+                    <td class="centrar"><%=saldoHsAdicionalPart.toFixed(2)%></td>
+                    
+                  </tr>
+
+                  
+                  <tr class="row-nodescuentos">
+                    
+                    <td>Compensacion Adic. Domingo</td>
+                    <td class="centrar"><%=saldoApagarHsDom.toFixed(2) %></td>
+
+                        
+                    
+                  </tr>
+                  <tr class="row-nodescuentos">
+                    
+                    <td>Premio Feriado</td>
+                    <td class="centrar"><%= saldoApagarHsFeriado %></td>
+                    
+                  </tr>
+
+                  <tr class="row-nodescuentos">
+                    
+                    <td>Presentismo</td>
+                    <td class="centrar"><%= (presentismo).toFixed(2) %></td>
+                    
+                  </tr>
+
+                  <tr class="row-nodescuentos">
+                    
+                    <td>Incremento Solidario</td>
+                    <td class="centrar"><%=incrementoSolidario%></td>
+                    
+                  </tr>
+
+                  <tr class="row-nodescuentos">
+                    
+                    <td>Acuerdo 2019-2020</td>
+                    <td class="centrar"><%=acuerdo2019%></td>
+                    
+                  </tr>
+
+                  <tr class="row-nodescuentos">
+                    
+                    <td>Adicional Fallo de Caja</td>
+                    <td class="centrar"><%=falloCaja%></td>
+                    
+                  </tr>
+
+                  <tr>
+                    
+                    
+                    
+                  </tr>
+
+                  <tr class="row-descuentos">
+                    
+                    <td>Jubilacion</td>
+                    <td class="centrar">- <%=jubilacion.toFixed(2)%></td>
+                    
+                  </tr>
+                     
+                  <tr class="row-descuentos">
+                    
+                    <td>Ley 19032</td>
+                    <td class="centrar">- <%=ley19032.toFixed(2)%></td>
+                    
+                  </tr>
+
+                  <tr class="row-descuentos">
+                    
+                    <td>ANSSAL</td>
+                    <td class="centrar">- <%=anssal.toFixed(2)%></td>
+                    
+                  </tr>
+
+                  <tr class="row-descuentos">
+                    
+                    <td>Obra Social</td>
+                    <td class="centrar">- <%=obraSocial.toFixed(2)%></td>
+                    
+                  </tr>
+
+                  <tr class="row-descuentos">
+                    
+                    <td>Sindicato AGEC y FAECYS</td>
+                    <td class="centrar">- <%=sindicatoAgec.toFixed(2)%></td>
+                    
+                  </tr>
+
+
+                  <tr class="row-neto">
+                   
+                    <td>Neto</td>
+                    <td class="centrar"><%=sueldoNeto.toFixed(2)%></td>
+                 
+                  </tr>
+
+
+
+                  
+                </tbody>
+              </table>
+
+           
+
+            <p> </p>
+
+        </div>
+
+</div>
+<footer>made with love by ezequiel lopez</footer>
+</body>
+</html>

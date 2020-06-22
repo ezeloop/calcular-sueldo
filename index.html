@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Una web app para poder calcular el sueldo, de un cajero de dinosaurio mall" desciription="Se puede calcular el sueldo del mes deseado, con los campos necesarios para calcular bien el mismo">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap" rel="stylesheet">
+
+    <title>Calcula tu sueldo</title>
+</head>
+<body>
+    <div class="container-general">
+        <h1>Bienvenidos</h1>
+
+        <div class="todos-los-input">
+        <form action="result" method="post">
+
+       
+
+        <div class="data-entry">
+            <label>  Tipo contrato</label>
+            <select name="jornadaH">
+                <option value="part-80">Part-time 80 horas</option>
+                <option value="part-120">part-time 120 horas</option>
+                <option value="fulltime">full-time</option>
+
+                
+
+            </select>
+        
+        </div>
+
+        <div class="data-entry">
+            <label>Horas Adicionales Part</label>
+            <input class="" type="text"  name="hsAdicionalesPart">
+            </div>
+
+        <div class="data-entry">
+            <label>Dias ausencia</label>
+            <input class="" type="text"  name="diasFalta">
+           <!-- Esto es un comentario 
+             <label>Asistencia</label>
+            <select name="asistencia">
+                <option value="asistenciaPerfecta">Si</option>
+                <option value="asistenciaIncompleta">No</option>
+                
+                
+
+            </select>
+            -->
+        </div>
+
+        
+
+
+        <div class="data-entry">
+        <label>Años de antiguedad</label>
+        <input class="" type="text" name="antiguedad">
+        </div>
+
+        <div class="data-entry">
+        <label>Horas domingos</label>
+        <input class="" type="text" name="hsDomingos">
+        </div>
+
+        <div class="data-entry">
+            <label>Horas feriados</label>
+            <input class="" type="text"  name="hsFeriados">
+            </div>
+        
+        <div class="data-entry">
+        <button type="submit" class="btn">Sumbit</button>
+    </div>
+    </form>
+</div>
+    </div>
+    
+    <script src="app.js"></script>
+    <footer>made with love by ezequiel lopez</footer>
+</body>
+</html>
