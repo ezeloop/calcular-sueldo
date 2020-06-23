@@ -149,28 +149,38 @@ background-color: #fab7b7 !important;
 
 }
 .row-nodescuentos {
-background-color: #efee9d !important; 
+    background-color: #efee9d !important;
 }
 
 .row-neto {
     color:black;
     background-color: #dddddd !important;
     height: 50px;
-    
 }
 
 
-
 .btn {
-background-color: #f5a8a8;
-width: 100px;
-height: 40px;
-border-radius: 50px;
-border-style: solid;
-border-color:#ffcbcb;
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
+    background-color: #f5a8a8;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color:#ffcbcb;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
 }
 
 .btn:hover{
     background-color: #81f5ff;
+}
+
+@media only screen and (min-device-width: 480px){}
+    .btn {
+        background-color: green !important;
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
+        border-style: solid;
+        border-color: #ffcbcb;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.14);
+    }
 }
